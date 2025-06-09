@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Massivni boshqarish</title>
+</head>
+<body>
+  <script>
+    // 1. Massiv yaratilmoqda
+    let myArray = ["Olma", "Banan", "Anor", "Uzum"];
+
+    // 2. Uzunlikni chiqarish
+    alert("Massiv uzunligi: " + myArray.length);
+    console.log("Massiv uzunligi: " + myArray.length);
+
+    // 3. Confirm orqali foydalanuvchidan tasdiq so'rash
+    let confirmation = confirm("Massivdan bitta elementni olib tashlamoqchimisiz?");
+
+    if (confirmation) {
+      // OK bosilsa bitta element o'chiriladi
+      myArray.pop(); // yoki myArray.shift()
+      alert("Yangi massiv: " + myArray);
+      console.log("Yangi massiv: ", myArray);
+    } else {
+      // Otmena bosilsa hech narsa o'zgarmaydi
+      alert("Massiv o'zgarmadi: " + myArray);
+      console.log("Massiv o'zgarmadi: ", myArray);
+    }
+  </script>
+</body>
+</html>
